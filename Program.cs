@@ -2,6 +2,12 @@
 var passerotto = new Passerotto("cip-cip" , "piccoli insetti");
 var delfino = new Delfino("canto" , "pesci" );
 var cane = new Cane("abbaio" , "crocchette");
+static void FaiNuotare(INuotante animale) => animale.Nuota();
+static void FaiVolare(IVolante animale) => animale.Vola();
+
+FaiNuotare(cane);
+FaiVolare(passerotto);
+
 Console.WriteLine("Aquila");
 aquila.PrintDormi();
 aquila.PrintVerso();
